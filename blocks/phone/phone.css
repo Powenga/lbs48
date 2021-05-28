@@ -1,3 +1,7 @@
 .phone {
   text-decoration: none;
+  font-family: 'Roboto slab', serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #B22D28;
 }

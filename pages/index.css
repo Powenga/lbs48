@@ -3,11 +3,14 @@
 @import url(../vendor/fonts/fonts.css);
 
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__header/page__header.css);
+@import url(../blocks/page/__content/page__content.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__promo/header__promo.css);
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__item/header__item.css);
 
 @import url(../blocks/nav/__bttn/nav__bttn.css);
 

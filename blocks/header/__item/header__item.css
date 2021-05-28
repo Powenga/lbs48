@@ -1,0 +1,11 @@
+.header__item {
+  margin-left: 65px;
+}
+
+.header__item:first-child {
+  margin-left: 0;
+}
+
+.header__item:nth-child(2) {
+  margin-left: auto;
+}

@@ -4,7 +4,9 @@
   width: 60px;
   opacity: .3;
   transition: opacity .3s;
+  margin-left: 25px;
 }
+
 .social__link:hover {
   opacity: 1;
 }
