@@ -1,0 +1,10 @@
+.header__promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  background-image: url(../../../images/header-promo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

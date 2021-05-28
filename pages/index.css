@@ -1,0 +1,21 @@
+@import url(../vendor/normalize.css);
+
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__promo/header__promo.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__container/header__container.css);
+
+@import url(../blocks/nav/__bttn/nav__bttn.css);
+
+@import url(../blocks/social/social__link/social__link.css);
+@import url(../blocks/social/social__link/_target/social__link_target_avito.css);
+@import url(../blocks/social/social__link/_target/social__link_target_vk.css);
+@import url(../blocks/social/social__link/_target/social__link_target_insta.css);
+
+@import url(../blocks/phone/phone.css);
+
+

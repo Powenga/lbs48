@@ -1,0 +1,13 @@
+.nav__bttn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border: none;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+.nav__bttn:hover {
+  background-color: #B22D28;
+}

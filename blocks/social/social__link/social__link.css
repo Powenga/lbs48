@@ -1,0 +1,10 @@
+.social__link {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  opacity: .3;
+  transition: opacity .3s;
+}
+.social__link:hover {
+  opacity: 1;
+}
