@@ -5,6 +5,7 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/page/__header/page__header.css);
 @import url(../blocks/page/__content/page__content.css);
+@import url(../blocks/page/__section/page__section.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__promo/header__promo.css);
@@ -25,4 +26,27 @@
 @import url(../blocks/nav/__list/nav__list.css);
 @import url(../blocks/nav/__link/nav__link.css);
 
+@import url(../blocks/section/__title/section__title.css);
+@import url(../blocks/section/__title/_type/section__title_type_services.css);
+@import url(../blocks/section/__title/_type/section__title_type_building.css);
+@import url(../blocks/section/__title/_type/section__title_type_production.css);
+@import url(../blocks/section/__title/_pos/section__title_pos_right.css);
+
+@import url(../blocks/section/__content/section__content.css);
+@import url(../blocks/section/__content/_type/section__content_type_services.css);
+@import url(../blocks/section/__content/_type/section__content_type_building.css);
+@import url(../blocks/section/__content/_type/section__content_type_production.css);
+
+@import url(../blocks/section/__wrap/section__wrap.css);
+@import url(../blocks/section/__wrap/pos/section__wrap_pos_right.css);
+@import url(../blocks/section/__text/section__text.css);
+@import url(../blocks/section/__accordion-list/section__accordion-list.css);
+@import url(../blocks/section/__accordion-item/section__accordion-item.css);
+
+@import url(../blocks/accordion/accordion.css);
+@import url(../blocks/accordion/__header/accordion__header.css);
+@import url(../blocks/accordion/__title/accordion__title.css);
+@import url(../blocks/accordion/__btn/accordion__btn.css);
+@import url(../blocks/accordion/__text/accordion__text.css);
+@import url(../blocks/accordion/__btn/accordion__btn.css);
 

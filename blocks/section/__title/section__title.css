@@ -1,0 +1,8 @@
+.section__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #858585;
+  text-transform: uppercase;
+  position: relative;
+}

@@ -4,10 +4,12 @@
   height: 60px;
   background-color: #000;
   border: none;
-  transition: background-color .3s;
+  transition: background-color .3s ease-out;
   cursor: pointer;
+  padding: 0;
 }
 
 .menu-bttn:hover {
   background-color: #B22D28;
 }
+

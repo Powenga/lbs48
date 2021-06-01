@@ -1,0 +1,16 @@
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 10px 20px;
+  border: 1px solid #9A9A9A;
+  cursor: pointer;
+}
+
+.accordion__header:hover .accordion__title {
+  color: #B22D28;
+}
+
+.accordion__header:hover .accordion__btn-rect {
+  fill: #B22D28;
+}

@@ -1,0 +1,5 @@
+.section__title_type_services::after {
+  padding-left: 12px;
+  vertical-align: middle;
+  content: url(../../../../images/services-icon.svg);
+}

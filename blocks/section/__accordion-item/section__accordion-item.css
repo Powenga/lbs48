@@ -1,0 +1,7 @@
+.section__accordion-item {
+  margin-bottom: 5px;
+}
+
+.section__accordion-item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,7 @@
+.accordion__btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}

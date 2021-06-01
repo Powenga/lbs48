@@ -1,0 +1,5 @@
+.section__title_type_production::after {
+  content: url(../../../../images/production-icon.svg);
+  padding-right: 12px;
+  vertical-align: middle;
+}
