@@ -1,0 +1,11 @@
+.nav__link {
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #858585;
+  transition: color .3s;
+}
+
+.nav__link:hover {
+  color: #B22D28;
+}

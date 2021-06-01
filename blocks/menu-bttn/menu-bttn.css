@@ -1,4 +1,4 @@
-.nav__bttn {
+.menu-bttn {
   display: block;
   width: 60px;
   height: 60px;
@@ -8,6 +8,6 @@
   cursor: pointer;
 }
 
-.nav__bttn:hover {
+.menu-bttn:hover {
   background-color: #B22D28;
 }

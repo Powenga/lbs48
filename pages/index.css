@@ -12,7 +12,7 @@
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__item/header__item.css);
 
-@import url(../blocks/nav/__bttn/nav__bttn.css);
+@import url(../blocks/menu-bttn/menu-bttn.css);
 
 @import url(../blocks/social/social__link/social__link.css);
 @import url(../blocks/social/social__link/_target/social__link_target_avito.css);
@@ -20,5 +20,9 @@
 @import url(../blocks/social/social__link/_target/social__link_target_insta.css);
 
 @import url(../blocks/phone/phone.css);
+
+@import url(../blocks/nav/nav.css);
+@import url(../blocks/nav/__list/nav__list.css);
+@import url(../blocks/nav/__link/nav__link.css);
 
 
