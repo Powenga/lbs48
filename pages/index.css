@@ -30,7 +30,9 @@
 @import url(../blocks/section/__title/_type/section__title_type_services.css);
 @import url(../blocks/section/__title/_type/section__title_type_building.css);
 @import url(../blocks/section/__title/_type/section__title_type_production.css);
+@import url(../blocks/section/__title/_type/section__title_type_advantages.css);
 @import url(../blocks/section/__title/_pos/section__title_pos_right.css);
+@import url(../blocks/section/__title/_pos/section__title_pos_center.css);
 
 @import url(../blocks/section/__content/section__content.css);
 @import url(../blocks/section/__content/_type/section__content_type_services.css);
@@ -49,4 +51,11 @@
 @import url(../blocks/accordion/__btn/accordion__btn.css);
 @import url(../blocks/accordion/__text/accordion__text.css);
 @import url(../blocks/accordion/__btn/accordion__btn.css);
+
+@import url(../blocks/advantages/advantages.css);
+@import url(../blocks/advantages/__item/advantages__item.css);
+
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__title/card__title.css);
+@import url(../blocks/card/__content/card__content.css);
 

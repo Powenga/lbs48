@@ -1,0 +1,5 @@
+.section__title_type_advantages::after {
+  content: url(../../../../images/advantages-icon.svg);
+  padding-right: 12px;
+  vertical-align: middle;
+}
