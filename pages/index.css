@@ -35,6 +35,9 @@
 @import url(../blocks/section/__title/_type/section__title_type_company.css);
 @import url(../blocks/section/__title/_pos/section__title_pos_right.css);
 @import url(../blocks/section/__title/_pos/section__title_pos_center.css);
+@import url(../blocks/section/__subtitle/section__subtitle.css);
+
+@import url(../blocks/section/__item/section__item.css);
 
 @import url(../blocks/section/__content/section__content.css);
 @import url(../blocks/section/__content/_type/section__content_type_services.css);
@@ -73,4 +76,11 @@
 @import url(../blocks/form/__policy-box/form__policy-box.css);
 @import url(../blocks/form/__submit/form__submit.css);
 @import url(../blocks/form/__submit/_disabled/form__submit_disabled.css);
+
+@import url(../blocks/company-info/company-info.css);
+@import url(../blocks/company-info/__header/company-info__header.css);
+@import url(../blocks/company-info/__text/company-info__text.css);
+
+@import url(../blocks/company/__vacancy/company__vacancy.css);
+@import url(../blocks/company/__vacancy-item/company__vacancy-item.css);
 
