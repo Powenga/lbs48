@@ -1,0 +1,5 @@
+.section__title_type_company::after {
+  content: url(../../../../images/company-icon.svg);
+  padding-left: 12px;
+  vertical-align: middle;
+}

@@ -1,0 +1,8 @@
+.form__policy-box {
+  align-self: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 35px;
+}

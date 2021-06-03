@@ -1,0 +1,9 @@
+.form__submit_disabled {
+  opacity: .5;
+  cursor: auto;
+}
+
+.form__submit_disabled:hover {
+  background-color: #B22D28;
+  color: #fff;
+}

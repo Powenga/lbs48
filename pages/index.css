@@ -6,6 +6,7 @@
 @import url(../blocks/page/__header/page__header.css);
 @import url(../blocks/page/__content/page__content.css);
 @import url(../blocks/page/__section/page__section.css);
+@import url(../blocks/page/__section/_size/page__section_size_narrow.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__promo/header__promo.css);
@@ -31,6 +32,7 @@
 @import url(../blocks/section/__title/_type/section__title_type_building.css);
 @import url(../blocks/section/__title/_type/section__title_type_production.css);
 @import url(../blocks/section/__title/_type/section__title_type_advantages.css);
+@import url(../blocks/section/__title/_type/section__title_type_company.css);
 @import url(../blocks/section/__title/_pos/section__title_pos_right.css);
 @import url(../blocks/section/__title/_pos/section__title_pos_center.css);
 
@@ -58,4 +60,17 @@
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__title/card__title.css);
 @import url(../blocks/card/__content/card__content.css);
+
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__title/form__title.css);
+@import url(../blocks/form/__container/form__container.css);
+@import url(../blocks/form/__select/form__select.css);
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__chebox/form__chebox.css);
+@import url(../blocks/form/__policy-label/form__policy-label.css);
+@import url(../blocks/form/__policy-btn/form__policy-btn.css);
+@import url(../blocks/form/__policy-pseudo/form__policy-pseudo.css);
+@import url(../blocks/form/__policy-box/form__policy-box.css);
+@import url(../blocks/form/__submit/form__submit.css);
+@import url(../blocks/form/__submit/_disabled/form__submit_disabled.css);
 

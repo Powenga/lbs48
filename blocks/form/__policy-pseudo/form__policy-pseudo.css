@@ -1,0 +1,15 @@
+.form__policy-pseudo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.form__chebox:checked + .form__policy-pseudo {
+  background-image: url(../../../images/checkbox-checked.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto
+}
