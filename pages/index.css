@@ -7,6 +7,7 @@
 @import url(../blocks/page/__content/page__content.css);
 @import url(../blocks/page/__section/page__section.css);
 @import url(../blocks/page/__section/_size/page__section_size_narrow.css);
+@import url(../blocks/page/__footer/page__footer.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__promo/header__promo.css);
@@ -83,4 +84,10 @@
 
 @import url(../blocks/company/__vacancy/company__vacancy.css);
 @import url(../blocks/company/__vacancy-item/company__vacancy-item.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/__policy/footer__policy.css);
+@import url(../blocks/footer/__social/footer__social.css);
 

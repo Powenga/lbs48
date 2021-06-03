@@ -1,0 +1,8 @@
+.footer__container {
+  margin: 0 auto;
+  max-width: calc(1305 / 1920 * 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}

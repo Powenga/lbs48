@@ -1,0 +1,18 @@
+.footer__social {
+  position: relative;
+  padding: 20px 40px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  transform: translate(0%, 0%) skew(-15deg);
+}

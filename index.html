@@ -1730,6 +1730,48 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer page__footer">
+      <div class="footer__container">
+        <img src="./images/logo.png" alt="Логотип" class="logo" />
+        <div class="footer__info">
+          <p class="footer__text">ООО “Липецкбетонстрой”</p>
+          <a class="footer__text" href="tel:+79046872411">+7(904) 687-24-11"</a>
+          <a class="footer__text" href="mailto:info@lbs48.ru">info@lbs48.ru</a>
+          <p class="footer__text">г. Липецк, улица Липецкая, д.1, оф.306”</p>
+          <p class="footer__text">
+            &copy; <span class="footer__year"></span> lbs48.ru
+          </p>
+        </div>
+        <div class="footer__links">
+          <button class="footer__policy">
+            Политика конфиденциальности
+          </button>
+          <div class="social footer__social">
+            <a
+              class="social__link social__link_target_vk"
+              href="https://vk.com/lipetskbeton"
+              target="_blank"
+              aria-label="Вконтакте"
+            ></a>
+            <a
+              class="social__link social__link_target_insta"
+              href="https://www.instagram.com/lipetskbeton/"
+              target="_blank"
+              aria-label="Инстаграм"
+            ></a>
+            <a
+              class="social__link social__link_target_avito"
+              href="https://www.avito.ru/user/532fad2e4f8bcdfd0a08882a64c073c0/profile?id=1941083681&src=item&page_from=from_item_card&iid=1941083681"
+              target="_blank"
+              aria-label="Авито"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelector(".footer__year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
