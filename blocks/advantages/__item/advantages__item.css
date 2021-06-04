@@ -1,4 +1,19 @@
 .advantages__item {
-  flex: 1 1 calc(100% / 6 - 5 * 3px);
+  flex: 1 0 calc(100% / 6 - 5 * 3px);
   margin: 3px;
+  min-width: 180px;
+}
+
+@media screen and (max-width: 1720px) {
+  .advantages__item {
+    flex-basis: (100% / 3 - 2 * 80px);
+    margin: 30px 80px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .advantages__item {
+    flex-basis: (100% / 3 - 2 * 50px);
+    margin: 20px 50px;
+  }
 }
