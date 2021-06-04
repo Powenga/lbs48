@@ -6,3 +6,10 @@
   text-transform: uppercase;
   position: relative;
 }
+
+@media screen and (max-width: 1024px) {
+  .section__title {
+    font-size: 24px;
+  }
+
+}

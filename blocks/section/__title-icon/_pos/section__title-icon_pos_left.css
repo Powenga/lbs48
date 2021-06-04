@@ -1,0 +1,9 @@
+.section__title-icon_pos_left {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__title-icon_pos_left {
+    margin-right: 0;
+  }
+}

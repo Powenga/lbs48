@@ -125,13 +125,22 @@
               aria-label="Авито"
             ></a>
           </div>
-          <a href="tel:+79046872411" class="phone nav__phone">+7 (904) 687-24-11 </a>
+          <a href="tel:+79046872411" class="phone nav__phone"
+            >+7 (904) 687-24-11
+          </a>
         </div>
       </nav>
     </header>
     <main class="page__content">
       <section id="services" class="section page__section">
-        <h2 class="section__title section__title_type_services">Услуги</h2>
+        <div class="section__title-wrapper">
+          <h2 class="section__title">Услуги</h2>
+          <img
+            src="./images/services-icon.svg"
+            alt=""
+            class="section__title-icon section__title-icon_pos_right"
+          />
+        </div>
         <div class="section__content section__content_type_services">
           <div class="section__wrap">
             <p class="section__text">
@@ -531,13 +540,16 @@
         </div>
       </section>
       <section id="building" class="section page__section">
-        <h2
-          class="
-            section__title section__title_type_building section__title_pos_right
-          "
-        >
-          Строительство домов
-        </h2>
+        <div class="section__title-wrapper section__title-wrapper_reverse">
+          <h2 class="section__title">
+            Строительство домов
+          </h2>
+          <img
+            src="./images/building-icon.svg"
+            alt=""
+            class="section__title-icon section__title-icon_pos_left"
+          />
+        </div>
         <div class="section__content section__content_type_building">
           <div class="section__wrap section__wrap_pos_right">
             <p class="section__text">
@@ -1097,9 +1109,16 @@
         </div>
       </section>
       <section id="production" class="section page__section">
-        <h2 class="section__title section__title_type_production">
-          Производство
-        </h2>
+        <div class="section__title-wrapper">
+          <h2 class="section__title section__title_type_services">
+            Производство
+          </h2>
+          <img
+            src="./images/production-icon.svg"
+            alt=""
+            class="section__title-icon section__title-icon_pos_right"
+          />
+        </div>
         <div class="section__content section__content_type_production">
           <div class="section__wrap">
             <p class="section__text">
@@ -1605,15 +1624,16 @@
         </div>
       </section>
       <section id="advantages" class="section page__section">
-        <h2
-          class="
-            section__title
-            section__title_type_advantages
-            section__title_pos_center
-          "
-        >
-          Преимущества
-        </h2>
+        <div class="section__title-wrapper section__title-wrapper_type_advantages">
+          <h2 class="section__title">
+            Преимущества
+          </h2>
+          <img
+            src="./images/advantages-icon.svg"
+            alt=""
+            class="section__title-icon section__title-icon_pos_right"
+          />
+        </div>
         <ul class="section__content advantages">
           <li class="advantages__item card">
             <img src="./images/Ellipse 4.jpg" alt="" />
@@ -1663,7 +1683,14 @@
         id="company"
         class="section page__section page__section_size_narrow"
       >
-        <h2 class="section__title section__title_type_company">Компания</h2>
+        <div class="section__title-wrapper section__title-wrapper_type_company">
+          <h2 class="section__title">Компания</h2>
+          <img
+            src="./images/company-icon.svg"
+            alt=""
+            class="section__title-icon section__title-icon_pos_right"
+          />
+        </div>
         <div class="section__content">
           <p class="section__text">
             Есть над чем задуматься: независимые государства преданы
@@ -1763,7 +1790,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer page__footer">
+    <!-- <footer class="footer page__footer">
       <div class="footer__container">
         <img src="./images/logo.png" alt="Логотип" class="logo" />
         <div class="footer__info">
@@ -1799,7 +1826,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script>
       document.querySelector(".footer__year").textContent =
         new Date().getFullYear();

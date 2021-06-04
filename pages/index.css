@@ -44,16 +44,18 @@
 @import url(../blocks/nav/__social/nav__social.css);
 @import url(../blocks/nav/__phone/nav__phone.css);
 
+@import url(../blocks/section/__title-wrapper/section__title-wrapper.css);
+@import url(../blocks/section/__title-wrapper/_reverse/section__title-wrapper_reverse.css);
+@import url(../blocks/section/__title-wrapper/_type/section__title-wrapper_type_advantages.css);
+@import url(../blocks/section/__title-wrapper/_type/section__title-wrapper_type_company.css);
+
 
 @import url(../blocks/section/__title/section__title.css);
-@import url(../blocks/section/__title/_type/section__title_type_services.css);
-@import url(../blocks/section/__title/_type/section__title_type_building.css);
-@import url(../blocks/section/__title/_type/section__title_type_production.css);
-@import url(../blocks/section/__title/_type/section__title_type_advantages.css);
-@import url(../blocks/section/__title/_type/section__title_type_company.css);
-@import url(../blocks/section/__title/_pos/section__title_pos_right.css);
-@import url(../blocks/section/__title/_pos/section__title_pos_center.css);
+@import url(../blocks/section/__title-icon/section__title-icon.css);
+@import url(../blocks/section/__title-icon/_pos/section__title-icon_pos_right.css);
+@import url(../blocks/section/__title-icon/_pos/section__title-icon_pos_left.css);
 @import url(../blocks/section/__subtitle/section__subtitle.css);
+
 
 @import url(../blocks/section/__item/section__item.css);
 
