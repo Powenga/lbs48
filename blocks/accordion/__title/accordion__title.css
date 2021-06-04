@@ -4,3 +4,15 @@
   color: #858585;
   margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .accordion__title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 18px;
+  }
+}
