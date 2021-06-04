@@ -9,4 +9,5 @@
   overflow: hidden;
   visibility: hidden;
   height: 1px;
+  z-index: 100;
 }

@@ -1,0 +1,13 @@
+.nav__container {
+  padding: 20px 0;
+  max-width: calc(1440 / 1920 * 100%);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__container {
+    max-width: calc(262 / 320 * 100%);
+  }
+}
+
+

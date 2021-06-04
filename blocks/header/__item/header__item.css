@@ -1,5 +1,5 @@
-.header__item {
-  margin-left: 65px;
+/* .header__item {
+  margin-left: auto;
 }
 
 .header__item:first-child {
@@ -7,5 +7,11 @@
 }
 
 .header__item:nth-child(2) {
-  margin-left: auto;
+  margin-left: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .header__item:nth-child(2) {
+    margin-left: auto;
+  }
+} */

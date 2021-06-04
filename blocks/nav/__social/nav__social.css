@@ -1,0 +1,15 @@
+.nav__social {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__social {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__social {
+    margin-bottom: 30px;
+  }
+}

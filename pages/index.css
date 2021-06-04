@@ -10,23 +10,40 @@
 @import url(../blocks/page/__footer/page__footer.css);
 
 @import url(../blocks/header/header.css);
+
 @import url(../blocks/header/__promo/header__promo.css);
+@import url(../blocks/header/__promo/_tablet/header__promo_tablet_disable.css);
+
+@import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__container/header__container.css);
-@import url(../blocks/header/__item/header__item.css);
+@import url(../blocks/header/__container/_tablet/header__container_tablet_wide.css);
+
+@import url(../blocks/header/__menu-logo/header__menu-logo.css);
 
 @import url(../blocks/menu-bttn/menu-bttn.css);
+
+@import url(../blocks/header/__social/header__social.css);
 
 @import url(../blocks/social/social__link/social__link.css);
 @import url(../blocks/social/social__link/_target/social__link_target_avito.css);
 @import url(../blocks/social/social__link/_target/social__link_target_vk.css);
 @import url(../blocks/social/social__link/_target/social__link_target_insta.css);
 
+@import url(../blocks/header/__phone/header__phone.css);
+@import url(../blocks/header/__phone/_tablet/header__phone_tablet_disable.css);
+
 @import url(../blocks/phone/phone.css);
 
 @import url(../blocks/nav/nav.css);
+@import url(../blocks/nav/_active/nav_active.css);
+@import url(../blocks/nav/__container/nav__container.css);
 @import url(../blocks/nav/__list/nav__list.css);
+@import url(../blocks/nav/__item/nav__item.css);
 @import url(../blocks/nav/__link/nav__link.css);
+@import url(../blocks/nav/__social/nav__social.css);
+@import url(../blocks/nav/__phone/nav__phone.css);
+
 
 @import url(../blocks/section/__title/section__title.css);
 @import url(../blocks/section/__title/_type/section__title_type_services.css);

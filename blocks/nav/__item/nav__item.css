@@ -1,0 +1,16 @@
+.nav__item {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__item {
+    flex: 1 0 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  .nav__item {
+    flex: 1 0 100%;
+  }
+}

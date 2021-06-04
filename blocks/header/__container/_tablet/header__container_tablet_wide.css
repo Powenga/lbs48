@@ -1,0 +1,7 @@
+@media screen and (max-width: 1024px) {
+  .header__container_tablet_wide {
+    max-width: 100%;
+    margin: 0 calc(10 / 320 * 100%);
+  }
+}
+

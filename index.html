@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Строительная компания ЛипецкБетонстрой" />
     <link rel="stylesheet" href="pages/index.css" />
@@ -11,11 +11,16 @@
 
   <body class="page">
     <header class="header page__header">
-      <div class="header__promo">
+      <div class="header__promo header__promo_tablet_disable">
         <img src="./images/logo.png" alt="Логотип" class="logo header__logo" />
       </div>
       <div class="header__menu">
-        <div class="header__container">
+        <div class="header__container header__container_tablet_wide">
+          <img
+            src="./images/logo-min.png"
+            class="logo header__menu-logo"
+            alt="Дополнительный логотип"
+          />
           <button
             class="menu-bttn header__item"
             type="button"
@@ -54,7 +59,7 @@
               />
             </svg>
           </button>
-          <div class="social header__item">
+          <div class="social header__social">
             <a
               class="social__link social__link_target_vk"
               href="https://vk.com/lipetskbeton"
@@ -74,26 +79,54 @@
               aria-label="Авито"
             ></a>
           </div>
-          <a href="tel:+79046872411" class="phone header__item"
+          <a
+            href="tel:+79046872411"
+            class="
+              phone
+              header__item header__phone header__phone_tablet_disable
+            "
             >+7 (904) 687-24-11
           </a>
         </div>
       </div>
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#services" class="nav__link">Услуги</a>
-          </li>
-          <li class="nav__item">
-            <a href="#building" class="nav__link">Строительство домов</a>
-          </li>
-          <li class="nav__item">
-            <a href="#production" class="nav__link">Производство</a>
-          </li>
-          <li class="nav__item">
-            <a href="#company" class="nav__link">Компания</a>
-          </li>
-        </ul>
+        <div class="nav__container">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#building" class="nav__link">Строительство домов</a>
+            </li>
+            <li class="nav__item">
+              <a href="#production" class="nav__link">Производство</a>
+            </li>
+            <li class="nav__item">
+              <a href="#company" class="nav__link">Компания</a>
+            </li>
+          </ul>
+          <div class="social nav__social">
+            <a
+              class="social__link social__link_target_vk"
+              href="https://vk.com/lipetskbeton"
+              target="_blank"
+              aria-label="Вконтакте"
+            ></a>
+            <a
+              class="social__link social__link_target_insta"
+              href="https://www.instagram.com/lipetskbeton/"
+              target="_blank"
+              aria-label="Инстаграм"
+            ></a>
+            <a
+              class="social__link social__link_target_avito"
+              href="https://www.avito.ru/user/532fad2e4f8bcdfd0a08882a64c073c0/profile?id=1941083681&src=item&page_from=from_item_card&iid=1941083681"
+              target="_blank"
+              aria-label="Авито"
+            ></a>
+          </div>
+          <a href="tel:+79046872411" class="phone nav__phone">+7 (904) 687-24-11 </a>
+        </div>
       </nav>
     </header>
     <main class="page__content">
@@ -1743,9 +1776,7 @@
           </p>
         </div>
         <div class="footer__links">
-          <button class="footer__policy">
-            Политика конфиденциальности
-          </button>
+          <button class="footer__policy">Политика конфиденциальности</button>
           <div class="social footer__social">
             <a
               class="social__link social__link_target_vk"

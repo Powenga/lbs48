@@ -7,6 +7,17 @@
   margin-left: 25px;
 }
 
+.social__link:first-child {
+  margin-left: 0;
+}
+
 .social__link:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 1440px) {
+  .social__link {
+    margin-left: 15px;
+  }
+}
+
