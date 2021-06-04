@@ -5,6 +5,7 @@
   background-color: #fff;
   cursor: pointer;
   margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .form__chebox:checked + .form__policy-pseudo {
@@ -12,4 +13,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size:auto
+}
+
+@media screen and (max-width: 1024px) {
+  .form__policy-pseudo {
+    width: 55px;
+    height: 55px;
+  }
 }

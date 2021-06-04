@@ -3,3 +3,15 @@
   font-size: 24px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 1024px) {
+  .form__policy-label {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form__policy-label {
+    font-size: 16px;
+  }
+}

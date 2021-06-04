@@ -14,3 +14,10 @@
   background-color: #fff;
   color: #B22D28;
 }
+
+@media screen and (max-width: 425px) {
+  .form__submit {
+    font-size: 24px;
+    padding: 9px 25px;
+  }
+}

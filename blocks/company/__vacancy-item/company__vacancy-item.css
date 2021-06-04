@@ -4,3 +4,9 @@
   color: #B22D28;
   margin-bottom: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  .company__vacancy-item {
+    font-size: 20px;
+  }
+}

@@ -7,6 +7,7 @@
   color: #B22D28;
   font-weight: 700;
   transition: opacity .3s;
+  text-align: start;
 }
 
 .form__policy-btn:hover{

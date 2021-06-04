@@ -2,7 +2,13 @@
   display: block;
   margin: 0 0 18px;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 150%;
   font-weight: 700;
   color: #141414;
+}
+
+@media screen and (max-width: 768px) {
+  .company-info__text {
+    font-size: 20px;
+  }
 }

@@ -9,3 +9,9 @@
   color: #858585;
   margin-bottom: 35px;
 }
+
+@media screen and (max-width: 1024px) {
+  .form__select {
+    font-size: 20px;
+  }
+}
