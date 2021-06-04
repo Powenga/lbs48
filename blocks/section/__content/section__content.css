@@ -4,3 +4,15 @@
   border-radius: 5px;
   padding: 50px 40px;
 }
+
+@media screen and (max-width:1024px) {
+  .section__content {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section__content {
+    padding: 15px 15px;
+  }
+}
