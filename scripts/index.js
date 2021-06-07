@@ -24,10 +24,10 @@ document.addEventListener("click", (evt) => {
 
 //navigation
 const navNode = document.querySelector(".nav");
-const navMenu = document.querySelector(".menu-btn")
+const navMenu = document.querySelector(".menu-btn");
 function toggleNav() {
   navNode.classList.toggle("nav_active");
-  navMenu.classList.toggle("menu-btn_active")
+  navMenu.classList.toggle("menu-btn_active");
 }
 document.addEventListener("click", (evt) => {
   if (evt.target.closest(".menu-btn")) {
@@ -41,4 +41,21 @@ navNode.addEventListener("click", (evt) => {
   ) {
     toggleNav();
   }
+});
+
+//policy popup
+const popupPolicy = document.querySelector(".popup_type_policy");
+
+document.querySelectorAll('.policy-btn').forEach(elem => {
+  elem.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    popupPolicy.classList.add("popup_active");
+  });
+});
+
+document.querySelectorAll(".popup__close-btn").forEach((elem) => {
+  elem.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    popupPolicy.classList.remove("popup_active");
+  });
 });

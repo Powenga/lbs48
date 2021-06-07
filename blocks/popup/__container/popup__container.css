@@ -1,0 +1,10 @@
+.popup__container {
+  position: relative;
+  overflow-y: auto;
+  background-color: #fff;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  box-shadow: 3px 3px 15px #000;
+}
