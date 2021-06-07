@@ -5,6 +5,7 @@
   opacity: .3;
   transition: opacity .3s;
   margin-left: 25px;
+  z-index: 1;
 }
 
 .social__link:first-child {
@@ -20,4 +21,5 @@
     margin-left: 15px;
   }
 }
+
 

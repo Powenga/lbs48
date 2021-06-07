@@ -6,3 +6,28 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
+@media screen and (max-width:1440px) {
+  .footer__container {
+    max-width: calc(1410 / 1920 * 100%);
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:1130px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .footer__container {
+    max-width: calc(300 / 320 * 100%);
+  }
+}
+
+@media screen and (max-width:425px) {
+  .footer__container {
+    max-width: 100%;
+  }
+}

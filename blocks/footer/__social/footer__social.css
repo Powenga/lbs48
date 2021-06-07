@@ -17,3 +17,16 @@
   background-color: #fff;
   transform: translate(0%, 0%) skew(-15deg);
 }
+
+@media screen and (max-width: 425px) {
+  .footer__social {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer__social::before {
+    content: none;
+  }
+}
