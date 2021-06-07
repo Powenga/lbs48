@@ -22,7 +22,8 @@
 
 @import url(../blocks/header/__menu-logo/header__menu-logo.css);
 
-@import url(../blocks/menu-bttn/menu-bttn.css);
+@import url(../blocks/menu-btn/menu-btn.css);
+@import url(../blocks/menu-btn/_active/menu-bttn_active.css);
 
 @import url(../blocks/header/__social/header__social.css);
 
@@ -75,8 +76,12 @@
 @import url(../blocks/accordion/__header/accordion__header.css);
 @import url(../blocks/accordion/__title/accordion__title.css);
 @import url(../blocks/accordion/__btn/accordion__btn.css);
+@import url(../blocks/accordion/__content/accordion__content.css);
+@import url(../blocks/accordion/__content/_opened/accordion__content_opened.css);
 @import url(../blocks/accordion/__text/accordion__text.css);
 @import url(../blocks/accordion/__btn/accordion__btn.css);
+@import url(../blocks/accordion/__btn-rect/accordion__btn-rect.css);
+@import url(../blocks/accordion/__btn-rect/_type/accordion__btn-rect_type_close.css);
 
 @import url(../blocks/advantages/advantages.css);
 @import url(../blocks/advantages/__item/advantages__item.css);

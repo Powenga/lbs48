@@ -1,0 +1,3 @@
+.accordion__btn-rect {
+  transition: transform .3s .3s ease-out;
+}

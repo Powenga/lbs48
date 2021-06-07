@@ -1,0 +1,8 @@
+.accordion__content {
+  border: 1px solid #9A9A9A;
+  border-bottom: none;
+  border-top: none;
+  transition: max-height .4s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
