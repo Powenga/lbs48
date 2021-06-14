@@ -100,4 +100,34 @@ document.addEventListener("click", (evt) => {
   }
 });
 
+// sticky header
+const headerPromo = document.querySelector('.header__promo');
+const headerMenu = document.querySelector('.header__menu');
+const headerMenuHeight = headerMenu.offsetHeight;
+const headerWrap = document.querySelector('.header__wrap')
+
+const headerItemList = document.querySelectorAll('.header__wrap-item')
+const headerPhone = document.querySelector('.header__wrap-phone')
+
+window.addEventListener('scroll', (evt)=> {
+  const headerPromoHeight = headerPromo.offsetHeight;
+  if(window.scrollY > headerPromoHeight) {
+    headerItemList.forEach(elem => {
+      elem.classList.add('header__wrap-item_type_minimized');
+    });
+    headerPhone.classList.add('header__wrap-phone_type_minimized')
+    headerWrap.classList.add('header__wrap_fixed');
+    page.style.paddingTop = `${headerMenuHeight}px`;
+    headerMenu.style.padding = "10px 0";
+  } else {
+    headerItemList.forEach(elem => {
+      elem.classList.remove('header__wrap-item_type_minimized');
+    });
+    headerPhone.classList.remove('header__wrap-phone_type_minimized')
+    headerWrap.classList.remove('header__wrap_fixed');
+    page.style.paddingTop = `0px`;
+    headerMenu.style.padding = "20px 0";
+  }
+})
+
 

@@ -1,0 +1,7 @@
+.header__wrap_fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+  z-index: 100;
+}
