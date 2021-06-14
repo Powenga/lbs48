@@ -1,7 +1,17 @@
 .form {
+  position: relative;
   padding: 20px 50px 50px;
-  background-color: #929292;
-  border-radius: 5px;
+  background: url(../../images/form-bgnd.jpg);
+}
+
+.form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.81) 0%, rgba(0, 0, 0, 0.36) 100%);
 }
 
 @media screen and (max-width: 768px) {
