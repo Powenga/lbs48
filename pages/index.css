@@ -8,6 +8,7 @@
 @import url(../blocks/page/__section/page__section.css);
 @import url(../blocks/page/__section/_size/page__section_size_narrow.css);
 @import url(../blocks/page/__footer/page__footer.css);
+@import url(../blocks/page/_blocked/page_blocked.css);
 
 @import url(../blocks/header/header.css);
 
@@ -51,13 +52,11 @@
 @import url(../blocks/section/__title-wrapper/_type/section__title-wrapper_type_advantages.css);
 @import url(../blocks/section/__title-wrapper/_type/section__title-wrapper_type_company.css);
 
-
 @import url(../blocks/section/__title/section__title.css);
 @import url(../blocks/section/__title-icon/section__title-icon.css);
 @import url(../blocks/section/__title-icon/_pos/section__title-icon_pos_right.css);
 @import url(../blocks/section/__title-icon/_pos/section__title-icon_pos_left.css);
 @import url(../blocks/section/__subtitle/section__subtitle.css);
-
 
 @import url(../blocks/section/__item/section__item.css);
 
@@ -71,6 +70,12 @@
 @import url(../blocks/section/__text/section__text.css);
 @import url(../blocks/section/__accordion-list/section__accordion-list.css);
 @import url(../blocks/section/__accordion-item/section__accordion-item.css);
+
+@import url(../blocks/section/__photo-grid/section__photo-grid.css);
+
+@import url(../blocks/photos/photos.css);
+@import url(../blocks/photos/__item/photos__item.css);
+@import url(../blocks/photos/__img/photos__img.css);
 
 @import url(../blocks/accordion/accordion.css);
 @import url(../blocks/accordion/__header/accordion__header.css);
@@ -123,7 +128,11 @@
 @import url(../blocks/popup/_active/popup_active.css);
 @import url(../blocks/popup/__cover/popup__cover.css);
 @import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__container/_type/popup__container_type_image.css);
 @import url(../blocks/popup/__close-btn/popup__close-btn.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__text/popup__text.css);
+@import url(../blocks/popup/__figure/popup__figure.css);
+@import url(../blocks/popup/__img/popup__img.css);
+@import url(../blocks/popup/__figcaption/popup__figcaption.css);
 

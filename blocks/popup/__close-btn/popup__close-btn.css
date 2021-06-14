@@ -4,8 +4,8 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -30px;
+  right: 0;
   cursor: pointer;
   opacity: .6;
   transition: opacity .2s ease-out;

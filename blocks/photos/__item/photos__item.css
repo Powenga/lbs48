@@ -1,0 +1,31 @@
+.photos__item {
+  height: 240px;
+  flex-grow: 1;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.photos__item:first-child {
+  max-width: 55%;
+}
+
+.photos__item:nth-child(2) {
+  max-width: 40%;
+}
+
+.photos__item:nth-child(3) {
+  max-width: 65%;
+}
+
+.photos__item:nth-child(4) {
+  max-width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .photos__item:first-child,
+  .photos__item:nth-child(2),
+  .photos__item:nth-child(3),
+  .photos__item:nth-child(4) {
+    max-width: 100%;
+  }
+}
