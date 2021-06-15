@@ -1306,26 +1306,30 @@
           <form class="section__item form" name="feedback" action="">
             <h3 class="form__title">Обратный звонок</h3>
             <div class="form__container">
-              <select name="theme" class="form__select">
+              <select name="theme" class="form__select form__element">
                 <option value="" selected disabled>Тема</option>
-                <option value="">Услуги</option>
-                <option value="">Строительство домов</option>
-                <option value="">Продукция</option>
+                <option value="Услуги">Услуги</option>
+                <option value="Строительство домов">Строительство домов</option>
+                <option value="Продукция">Продукция</option>
               </select>
               <input
-                class="form__input"
+                class="form__input form__element"
                 type="text"
-                name="user-name"
+                name="userName"
                 placeholder="Ваше имя"
               />
               <input
-                class="form__input"
+                class="form__input form__element"
                 type="text"
-                name="user-phone"
+                name="userPhone"
                 placeholder="Ваш телефон"
               />
               <label class="form__policy-box">
-                <input class="form__chebox" type="checkbox" name="user-phone" />
+                <input
+                  class="form__chebox form__element"
+                  type="checkbox"
+                  name="user-policy"
+                />
                 <span class="form__policy-pseudo"></span>
                 <span class="form__policy-label">
                   Согласие с
@@ -1334,13 +1338,7 @@
                   </button>
                 </span>
               </label>
-              <button
-                class="form__submit form__submit_disabled"
-                type="submit"
-                disabled
-              >
-                Отправить
-              </button>
+              <button class="form__submit" type="submit">Отправить</button>
             </div>
           </form>
           <ul class="company-info section__item">
@@ -1396,9 +1394,9 @@
         <img src="./images/logo.png" alt="Логотип" class="logo footer__logo" />
         <div class="footer__info">
           <p class="footer__text">ООО “Липецкбетонстрой”</p>
-          <a class="footer__text" href="tel:+79046872411">+7(904) 687-24-11"</a>
+          <a class="footer__text" href="tel:+79046872411">+7(904) 687-24-11</a>
           <a class="footer__text" href="mailto:info@lbs48.ru">info@lbs48.ru</a>
-          <p class="footer__text">г. Липецк, улица Липецкая, д.1, оф.306”</p>
+          <p class="footer__text">г. Липецк, улица Липецкая, д.1, оф.306</p>
           <p class="footer__text">
             &copy; <span class="footer__year"></span> lbs48.ru
           </p>
@@ -1525,6 +1523,43 @@
         </figure>
       </div>
     </div>
-    <script src="./scripts/index.js"></script>
+    <div class="popup popup_type_mail">
+      <div class="popup__cover"></div>
+      <div class="popup__container popup__container_type_mail">
+        <button class="popup__close-btn">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.979004"
+              y="22.1924"
+              width="30"
+              height="4"
+              transform="rotate(-45 0.979004 22.1924)"
+              fill="white"
+            />
+            <rect
+              x="3.80762"
+              y="0.979248"
+              width="30"
+              height="4"
+              transform="rotate(45 3.80762 0.979248)"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="popup__text-content">
+          <img class="popup__status-img" src="" atl="">
+          <h2 class="popup__title popup__title_type_mail"></h2>
+          <p class="popup__text popup__text_type_mail"></p>
+      </div>
+    </div>
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./utils/api.js"></script>
+    <script type="module" src="./utils/constants.js"></script>
   </body>
 </html>
