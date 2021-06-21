@@ -1322,9 +1322,24 @@
                     Строительство домов
                   </option>
                   <option value="Продукция">Продукция</option>
+                  <option value="Вакансии">Вакансии</option>
                 </select>
-                <span class="form__error messageTheme-error"></span
+                <span class="form__error messageTheme-error"></span>
+              </label>
+              <label
+                class="form__field form__field_type_vacancy form__field_hidden"
+              >
+                <select
+                  id="vacancy-select"
+                  name="vacancy"
+                  class="form__select form__element"
                 >
+                  <option value="" selected disabled>Профессия</option>
+                  <template id="option-template">
+                    <option value=""></option>
+                  </template>
+                </select>
+                <span class="form__error vacancy-select-error"></span>
               </label>
               <label class="form__field">
                 <input
@@ -1341,13 +1356,13 @@
               </label>
               <label class="form__field">
                 <input
-                id="userPhone"
-                class="form__input form__element"
-                type="text"
-                name="userPhone"
-                placeholder="Ваш телефон"
-                pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
-                required
+                  id="userPhone"
+                  class="form__input form__element"
+                  type="text"
+                  name="userPhone"
+                  placeholder="Ваш телефон"
+                  pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  required
                 />
                 <span class="form__error userPhone-error"></span>
               </label>
@@ -1371,9 +1386,10 @@
               <button
                 class="form__submit form__submit_disabled"
                 type="submit"
-                disabled>
-                  Отправить
-                </button>
+                disabled
+              >
+                Отправить
+              </button>
             </div>
           </form>
           <ul class="company-info section__item">
@@ -1413,10 +1429,14 @@
               </a>
             </li>
           </ul>
-          <div
-            class="map section__item"
-            style="height: 330px; background-color: #373737"
-          ></div>
+          <div class="map section__item">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A24da4cea8e8c974506929627e605c9311cecd0ac3cfa20582dcf94a3a26ff88b&amp;width=100%25&amp;height=330&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
           <h3 class="section__subtitle">Вакансии</h3>
           <p class="section__text">
             Есть над чем задуматься: независимые государства преданы
@@ -1426,12 +1446,9 @@
             культуры, будут ассоциативно распределены по отраслям.
           </p>
           <ul class="company__vacancy">
-            <li class="company__vacancy-item">Мастера СМР</li>
-            <li class="company__vacancy-item">Сварщики</li>
-            <li class="company__vacancy-item">Плотники</li>
-            <li class="company__vacancy-item">
-              Монтажники железобетонных конструкций
-            </li>
+            <template id="vacancy-item-template">
+              <li class="company__vacancy-item">Мастера СМР</li>
+            </template>
           </ul>
         </div>
       </section>

@@ -12,6 +12,7 @@ import {
   SEND_MAIL_FAILURE_MESSAGE,
   HEADER_MIN_MENU_HEIGHT,
   validationData,
+  vacancy,
 } from './utils/constants.js';
 
 const page = document.querySelector('.page');
@@ -36,6 +37,29 @@ const popupMailImage = popupMail.querySelector('.popup__status-img');
 
 const form = document.querySelector('.form');
 const formPhone = form.querySelector('#userPhone');
+const themeSelectNode = form.querySelector('#messageTheme');
+
+const vacancyLabelNode = form.querySelector('.form__field_type_vacancy');
+const vacancySelectNode = form.querySelector('#vacancy-select');
+const optionItemNode = vacancySelectNode.querySelector('#option-template')
+  .content
+  .querySelector('option');
+
+const vacancyContainer = document.querySelector('.company__vacancy');
+const vacancyItemNode = vacancyContainer.querySelector('#vacancy-item-template')
+  .content
+  .querySelector('.company__vacancy-item');
+
+// generate document parts
+vacancy.forEach((elem) => {
+  const itemNode = vacancyItemNode.cloneNode(true);
+  const optionNode = optionItemNode.cloneNode(true);
+  itemNode.textContent = elem;
+  optionNode.textContent = elem;
+  optionNode.value = elem;
+  vacancyContainer.appendChild(itemNode);
+  vacancySelectNode.appendChild(optionNode);
+});
 
 // document date
 document.querySelector('.footer__year').textContent = new Date().getFullYear();
@@ -197,6 +221,20 @@ window.addEventListener('scroll', () => {
 
 const validator = new FormValidator(validationData, form);
 validator.enableValidation();
+
+themeSelectNode.addEventListener('input', (evt) => {
+  if (evt.target.value === 'Вакансии') {
+    vacancyLabelNode.classList.remove('form__field_hidden');
+    vacancySelectNode.required = true;
+    vacancySelectNode.disabled = false;
+    validator.enableValidation();
+  } else {
+    vacancyLabelNode.classList.add('form__field_hidden');
+    vacancySelectNode.required = false;
+    vacancySelectNode.disabled = true;
+    validator.enableValidation();
+  }
+});
 
 new Inputmask('+7 (999) 999-99-99').mask(formPhone);
 

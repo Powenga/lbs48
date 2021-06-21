@@ -14,3 +14,10 @@ export const validationData = {
   inputErrorClass: 'form__element_status_error',
   errorClass: 'form__error',
 };
+
+export const vacancy = [
+  'Мастера СМР',
+  'Сварщики',
+  'Плотники',
+  'Монтажники железобетонных конструкций',
+];

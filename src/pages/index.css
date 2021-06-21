@@ -106,6 +106,7 @@
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__container/form__container.css);
 @import url(../blocks/form/__field/form__field.css);
+@import url(../blocks/form/__field/_hidden/form__field_hidden.css);
 @import url(../blocks/form/__select/form__select.css);
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__chebox/form__chebox.css);
