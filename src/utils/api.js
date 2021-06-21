@@ -13,7 +13,7 @@ class Api {
     return Promise.reject(res.status);
   }
 
-  static sendMail(data) {
+  sendMail(data) {
   //   return fetch(`${this._baseUrl}/mail`, {
   //     method: 'POST',
   //     headers: this._headers,
@@ -21,7 +21,7 @@ class Api {
   //   })
   //     .then(this._onError)
   // }
-    return Promise.resolve(data);
+    return Promise.reject(data);
   }
 }
 

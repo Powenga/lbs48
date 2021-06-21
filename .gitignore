@@ -13,6 +13,7 @@ node_modules
 
 # Optional npm cache directory
 .npm
+/dist
 
 # misc
 .DS_Store

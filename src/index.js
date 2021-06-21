@@ -1,4 +1,5 @@
-import api from '../utils/api.js';
+import './pages/index.css';
+import api from './utils/api.js';
 import {
   SEND_MAIL_SUCCESS_TITLE,
   SEND_MAIL_SUCCESS_MESSAGE,
@@ -6,13 +7,14 @@ import {
   SEND_MAIL_FAILURE_MESSAGE,
   SEND_MAIL_SUCCESS_IMAGE_PATH,
   SEND_MAIL_FAILURE_IMAGE_PATH,
-} from '../utils/constants.js';
+  HEADER_MIN_MENU_HEIGHT,
+} from './utils/constants.js';
+
 
 const page = document.querySelector('.page');
 
 const headerPromo = document.querySelector('.header__promo');
 const headerMenu = document.querySelector('.header__menu');
-const headerMenuHeight = headerMenu.offsetHeight;
 const headerWrap = document.querySelector('.header__wrap');
 const headerItemList = document.querySelectorAll('.header__wrap-item');
 const headerPhone = document.querySelector('.header__wrap-phone');
@@ -163,7 +165,7 @@ window.addEventListener('scroll', () => {
     });
     headerPhone.classList.add('header__wrap-phone_type_minimized');
     headerWrap.classList.add('header__wrap_fixed');
-    page.style.paddingTop = `${headerMenuHeight}px`;
+    page.style.paddingTop = `${HEADER_MIN_MENU_HEIGHT}px`;
     headerMenu.style.padding = '10px 0';
   } else {
     headerItemList.forEach((elem) => {
