@@ -1,0 +1,19 @@
+.form__error {
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__error {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form__error {
+    font-size: 12px;
+  }
+}

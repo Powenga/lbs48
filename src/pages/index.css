@@ -105,9 +105,12 @@
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__container/form__container.css);
+@import url(../blocks/form/__field/form__field.css);
 @import url(../blocks/form/__select/form__select.css);
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__chebox/form__chebox.css);
+@import url(../blocks/form/__element/_status/form__element_status_error.css);
+@import url(../blocks/form/__error/form__error.css);
 @import url(../blocks/form/__policy-label/form__policy-label.css);
 @import url(../blocks/form/__policy-btn/form__policy-btn.css);
 @import url(../blocks/form/__policy-pseudo/form__policy-pseudo.css);

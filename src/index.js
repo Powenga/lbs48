@@ -1,15 +1,18 @@
 import './pages/index.css';
+import Inputmask from 'inputmask';
+import SEND_MAIL_SUCCESS_IMAGE_PATH from './images/send-mail-success.png';
+import SEND_MAIL_FAILURE_IMAGE_PATH from './images/send-mail-failure.png';
 import api from './utils/api.js';
+import FormValidator from './utils/FormValidator';
+
 import {
   SEND_MAIL_SUCCESS_TITLE,
   SEND_MAIL_SUCCESS_MESSAGE,
   SEND_MAIL_FAILURE_TITLE,
   SEND_MAIL_FAILURE_MESSAGE,
-  SEND_MAIL_SUCCESS_IMAGE_PATH,
-  SEND_MAIL_FAILURE_IMAGE_PATH,
   HEADER_MIN_MENU_HEIGHT,
+  validationData,
 } from './utils/constants.js';
-
 
 const page = document.querySelector('.page');
 
@@ -32,6 +35,7 @@ const popupMailText = popupMail.querySelector('.popup__text');
 const popupMailImage = popupMail.querySelector('.popup__status-img');
 
 const form = document.querySelector('.form');
+const formPhone = form.querySelector('#userPhone');
 
 // document date
 document.querySelector('.footer__year').textContent = new Date().getFullYear();
@@ -92,6 +96,19 @@ function getFormData(evt) {
     }
   });
   return formDataList;
+}
+
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  api
+    .sendMail(getFormData(evt))
+    .then(() => {
+      showMessage(true, SEND_MAIL_SUCCESS_TITLE, SEND_MAIL_SUCCESS_MESSAGE);
+    })
+    .catch(() => {
+      showMessage(false, SEND_MAIL_FAILURE_TITLE, SEND_MAIL_FAILURE_MESSAGE);
+    })
+    .finally();
 }
 
 // accordion
@@ -178,18 +195,10 @@ window.addEventListener('scroll', () => {
   }
 });
 
-function formSubmitHandler(evt) {
-  evt.preventDefault();
-  api
-    .sendMail(getFormData(evt))
-    .then(() => {
-      showMessage(true, SEND_MAIL_SUCCESS_TITLE, SEND_MAIL_SUCCESS_MESSAGE);
-    })
-    .catch(() => {
-      showMessage(false, SEND_MAIL_FAILURE_TITLE, SEND_MAIL_FAILURE_MESSAGE);
-    })
-    .finally();
-}
+const validator = new FormValidator(validationData, form);
+validator.enableValidation();
+
+new Inputmask('+7 (999) 999-99-99').mask(formPhone);
 
 form.addEventListener('submit', (evt) => {
   formSubmitHandler(evt);
