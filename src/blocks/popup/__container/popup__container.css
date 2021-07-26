@@ -2,6 +2,7 @@
   position: relative;
   margin: 0 auto;
   width: 90vw;
+  max-width: 1920px;
   height: 80vh;
   box-shadow: 3px 3px 15px #000;
 }

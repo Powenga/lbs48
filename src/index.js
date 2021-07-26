@@ -1,9 +1,9 @@
-import './pages/index.css';
-import Inputmask from 'inputmask';
-import SEND_MAIL_SUCCESS_IMAGE_PATH from './images/send-mail-success.png';
-import SEND_MAIL_FAILURE_IMAGE_PATH from './images/send-mail-failure.png';
-import api from './utils/api.js';
-import FormValidator from './utils/FormValidator';
+import "./pages/index.css";
+import Inputmask from "inputmask";
+import SEND_MAIL_SUCCESS_IMAGE_PATH from "./images/send-mail-success.png";
+import SEND_MAIL_FAILURE_IMAGE_PATH from "./images/send-mail-failure.png";
+import api from "./utils/api.js";
+import FormValidator from "./utils/FormValidator";
 
 import {
   SEND_MAIL_SUCCESS_TITLE,
@@ -13,42 +13,42 @@ import {
   HEADER_MIN_MENU_HEIGHT,
   validationData,
   vacancy,
-} from './utils/constants.js';
+} from "./utils/constants.js";
 
-const page = document.querySelector('.page');
+const page = document.querySelector(".page");
 
-const headerPromo = document.querySelector('.header__promo');
-const headerMenu = document.querySelector('.header__menu');
-const headerWrap = document.querySelector('.header__wrap');
-const headerItemList = document.querySelectorAll('.header__wrap-item');
-const headerPhone = document.querySelector('.header__wrap-phone');
+const headerPromo = document.querySelector(".header__promo");
+const headerMenu = document.querySelector(".header__menu");
+const headerWrap = document.querySelector(".header__wrap");
+const headerItemList = document.querySelectorAll(".header__wrap-item");
+const headerPhone = document.querySelector(".header__wrap-phone");
 
-const navNode = document.querySelector('.nav');
-const navMenu = document.querySelector('.menu-btn');
+const navNode = document.querySelector(".nav");
+const navMenu = document.querySelector(".menu-btn");
 
-const popupPolicy = document.querySelector('.popup_type_policy');
-const popupImage = document.querySelector('.popup_type_img');
-const popupImageImg = popupImage.querySelector('.popup__img');
-const popupImageFigcaption = popupImage.querySelector('.popup__figcaption');
-const popupMail = document.querySelector('.popup_type_mail');
-const popupMailTitle = popupMail.querySelector('.popup__title');
-const popupMailText = popupMail.querySelector('.popup__text');
-const popupMailImage = popupMail.querySelector('.popup__status-img');
+const popupPolicy = document.querySelector(".popup_type_policy");
+const popupImage = document.querySelector(".popup_type_img");
+const popupImageImg = popupImage.querySelector(".popup__img");
+const popupImageFigcaption = popupImage.querySelector(".popup__figcaption");
+const popupMail = document.querySelector(".popup_type_mail");
+const popupMailTitle = popupMail.querySelector(".popup__title");
+const popupMailText = popupMail.querySelector(".popup__text");
+const popupMailImage = popupMail.querySelector(".popup__status-img");
 
-const form = document.querySelector('.form');
-const formPhone = form.querySelector('#userPhone');
-const themeSelectNode = form.querySelector('#messageTheme');
+const form = document.querySelector(".form");
+const formPhone = form.querySelector("#userPhone");
+const themeSelectNode = form.querySelector("#messageTheme");
 
-const vacancyLabelNode = form.querySelector('.form__field_type_vacancy');
-const vacancySelectNode = form.querySelector('#vacancy-select');
-const optionItemNode = vacancySelectNode.querySelector('#option-template')
-  .content
-  .querySelector('option');
+const vacancyLabelNode = form.querySelector(".form__field_type_vacancy");
+const vacancySelectNode = form.querySelector("#vacancy-select");
+const optionItemNode = vacancySelectNode
+  .querySelector("#option-template")
+  .content.querySelector("option");
 
-const vacancyContainer = document.querySelector('.company__vacancy');
-const vacancyItemNode = vacancyContainer.querySelector('#vacancy-item-template')
-  .content
-  .querySelector('.company__vacancy-item');
+const vacancyContainer = document.querySelector(".company__vacancy");
+const vacancyItemNode = vacancyContainer
+  .querySelector("#vacancy-item-template")
+  .content.querySelector(".company__vacancy-item");
 
 // generate document parts
 vacancy.forEach((elem) => {
@@ -62,37 +62,37 @@ vacancy.forEach((elem) => {
 });
 
 // document date
-document.querySelector('.footer__year').textContent = new Date().getFullYear();
+document.querySelector(".footer__year").textContent = new Date().getFullYear();
 
 // functions
 function toggleNav() {
-  navNode.classList.toggle('nav_active');
-  navMenu.classList.toggle('menu-btn_active');
+  navNode.classList.toggle("nav_active");
+  navMenu.classList.toggle("menu-btn_active");
 }
 
 function blockPageScroll() {
-  page.classList.toggle('page_blocked');
+  page.classList.toggle("page_blocked");
 }
 
 function handleEscPopupClose(evt) {
-  if (evt.key === 'Escape') {
+  if (evt.key === "Escape") {
     // eslint-disable-next-line
     closePopup();
   }
 }
 
 function openPopup(popup) {
-  popup.classList.add('popup_active');
+  popup.classList.add("popup_active");
   blockPageScroll();
-  document.addEventListener('keydown', handleEscPopupClose);
+  document.addEventListener("keydown", handleEscPopupClose);
 }
 
 function closePopup() {
-  popupPolicy.classList.remove('popup_active');
-  popupImage.classList.remove('popup_active');
-  popupMail.classList.remove('popup_active');
+  popupPolicy.classList.remove("popup_active");
+  popupImage.classList.remove("popup_active");
+  popupMail.classList.remove("popup_active");
   blockPageScroll();
-  document.removeEventListener('keydown', handleEscPopupClose);
+  document.removeEventListener("keydown", handleEscPopupClose);
 }
 
 function setPopupImg(targetImage) {
@@ -115,8 +115,9 @@ function showMessage(status, title, message) {
 function getFormData(evt) {
   const formDataList = {};
   [...evt.target.elements].forEach((elem) => {
-    if (elem.classList.contains('form__element')) {
-      formDataList[elem.name] = elem.type === 'checkbox' ? elem.checked : elem.value;
+    if (elem.classList.contains("form__element")) {
+      formDataList[elem.name] =
+        elem.type === "checkbox" ? elem.checked : elem.value;
     }
   });
   return formDataList;
@@ -136,108 +137,108 @@ function formSubmitHandler(evt) {
 }
 
 // accordion
-document.addEventListener('click', (evt) => {
-  if (evt.target.closest('.accordion__header')) {
-    const accordionNode = evt.target.closest('.accordion');
-    const contentNode = accordionNode.querySelector('.accordion__content');
-    contentNode.classList.toggle('accordion__content_opened');
+document.addEventListener("click", (evt) => {
+  if (evt.target.closest(".accordion__header")) {
+    const accordionNode = evt.target.closest(".accordion");
+    const contentNode = accordionNode.querySelector(".accordion__content");
+    contentNode.classList.toggle("accordion__content_opened");
     if (contentNode.style.maxHeight) {
       contentNode.style.maxHeight = null;
     } else {
       contentNode.style.maxHeight = `${contentNode.scrollHeight}px`;
     }
     accordionNode
-      .querySelectorAll('.accordion__btn-rect')
+      .querySelectorAll(".accordion__btn-rect")
       .forEach((element) => {
-        element.classList.toggle('accordion__btn-rect_type_close');
+        element.classList.toggle("accordion__btn-rect_type_close");
       });
   }
 });
 
-document.addEventListener('click', (evt) => {
-  if (evt.target.closest('.menu-btn')) {
+document.addEventListener("click", (evt) => {
+  if (evt.target.closest(".menu-btn")) {
     toggleNav();
   }
 });
 
-navNode.addEventListener('click', (evt) => {
+navNode.addEventListener("click", (evt) => {
   if (
-    evt.target.classList.contains('nav__link')
-    || evt.target.classList.contains('nav__phone')
+    evt.target.classList.contains("nav__link") ||
+    evt.target.classList.contains("nav__phone")
   ) {
     toggleNav();
   }
 });
 
-document.querySelectorAll('.policy-btn').forEach((elem) => {
-  elem.addEventListener('click', (evt) => {
+document.querySelectorAll(".policy-btn").forEach((elem) => {
+  elem.addEventListener("click", (evt) => {
     evt.preventDefault();
     openPopup(popupPolicy);
   });
 });
 
-document.querySelectorAll('.photos__img').forEach((elem) => {
-  elem.addEventListener('click', (evt) => {
+document.querySelectorAll(".photos__img").forEach((elem) => {
+  elem.addEventListener("click", (evt) => {
     evt.preventDefault();
     setPopupImg(evt.target);
     openPopup(popupImage);
   });
 });
 
-document.querySelectorAll('.popup__close-btn').forEach((elem) => {
-  elem.addEventListener('click', (evt) => {
+document.querySelectorAll(".popup__close-btn").forEach((elem) => {
+  elem.addEventListener("click", (evt) => {
     evt.preventDefault();
     closePopup();
   });
 });
 
-document.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('popup__cover')) {
+document.addEventListener("click", (evt) => {
+  if (evt.target.classList.contains("popup__cover")) {
     evt.preventDefault();
     closePopup();
   }
 });
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   const headerPromoHeight = headerPromo.offsetHeight;
   if (window.scrollY > headerPromoHeight) {
     headerItemList.forEach((elem) => {
-      elem.classList.add('header__wrap-item_type_minimized');
+      elem.classList.add("header__wrap-item_type_minimized");
     });
-    headerPhone.classList.add('header__wrap-phone_type_minimized');
-    headerWrap.classList.add('header__wrap_fixed');
+    headerPhone.classList.add("header__wrap-phone_type_minimized");
+    headerWrap.classList.add("header__wrap_fixed");
     page.style.paddingTop = `${HEADER_MIN_MENU_HEIGHT}px`;
-    headerMenu.style.padding = '10px 0';
+    headerMenu.style.padding = "10px 0";
   } else {
     headerItemList.forEach((elem) => {
-      elem.classList.remove('header__wrap-item_type_minimized');
+      elem.classList.remove("header__wrap-item_type_minimized");
     });
-    headerPhone.classList.remove('header__wrap-phone_type_minimized');
-    headerWrap.classList.remove('header__wrap_fixed');
-    page.style.paddingTop = '0px';
-    headerMenu.style.padding = '20px 0';
+    headerPhone.classList.remove("header__wrap-phone_type_minimized");
+    headerWrap.classList.remove("header__wrap_fixed");
+    page.style.paddingTop = "0px";
+    headerMenu.style.padding = "20px 0";
   }
 });
 
 const validator = new FormValidator(validationData, form);
 validator.enableValidation();
 
-themeSelectNode.addEventListener('input', (evt) => {
-  if (evt.target.value === 'Вакансии') {
-    vacancyLabelNode.classList.remove('form__field_hidden');
+themeSelectNode.addEventListener("input", (evt) => {
+  if (evt.target.value === "Вакансии") {
+    vacancyLabelNode.classList.remove("form__field_hidden");
     vacancySelectNode.required = true;
     vacancySelectNode.disabled = false;
     validator.enableValidation();
   } else {
-    vacancyLabelNode.classList.add('form__field_hidden');
+    vacancyLabelNode.classList.add("form__field_hidden");
     vacancySelectNode.required = false;
     vacancySelectNode.disabled = true;
     validator.enableValidation();
   }
 });
 
-new Inputmask('+7 (999) 999-99-99').mask(formPhone);
+new Inputmask("+7 (999) 999-99-99").mask(formPhone);
 
-form.addEventListener('submit', (evt) => {
+form.addEventListener("submit", (evt) => {
   formSubmitHandler(evt);
 });
