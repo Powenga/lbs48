@@ -1,6 +1,6 @@
 .form__policy-label {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -10,8 +10,15 @@
   }
 }
 
+@media screen and (max-width: 629px) {
+  .form__policy-label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .form__policy-label {
-    font-size: 16px;
+    font-size: 14px;
   }
 }

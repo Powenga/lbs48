@@ -75,6 +75,7 @@
 @import url(../blocks/section/__wrap/section__wrap.css);
 @import url(../blocks/section/__wrap/pos/section__wrap_pos_right.css);
 @import url(../blocks/section/__text/section__text.css);
+@import url(../blocks/section/__text-accent/section__text-accent.css);
 @import url(../blocks/section/__accordion-list/section__accordion-list.css);
 @import url(../blocks/section/__accordion-item/section__accordion-item.css);
 

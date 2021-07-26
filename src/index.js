@@ -54,9 +54,9 @@ const vacancyItemNode = vacancyContainer
 vacancy.forEach((elem) => {
   const itemNode = vacancyItemNode.cloneNode(true);
   const optionNode = optionItemNode.cloneNode(true);
-  itemNode.textContent = elem;
-  optionNode.textContent = elem;
-  optionNode.value = elem;
+  itemNode.textContent = elem.pluralName;
+  optionNode.textContent = elem.singularName;
+  optionNode.value = elem.singularName;
   vacancyContainer.appendChild(itemNode);
   vacancySelectNode.appendChild(optionNode);
 });
