@@ -1,5 +1,14 @@
 .section__content_type_services {
   background: bottom 0 right 0px / auto no-repeat
       url(../../../../images/services-bkg.png),
+    top 100px right 0px / 400px auto no-repeat
+      url(../../../../images/helmet.png),
     #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .section__content_type_services {
+    background: bottom 0 right 0px / auto no-repeat
+      url(../../../../images/services-bkg.png);
+  }
 }

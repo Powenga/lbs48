@@ -1,5 +1,13 @@
 .section__content_type_building {
   background: top 0 left 0 / auto no-repeat
       url(../../../../images/building-bkg.png),
+    bottom 500px left 0 / 400px auto no-repeat url(../../../../images/house.png),
     #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .section__content_type_building {
+    background: top 0 left 0 / auto no-repeat
+      url(../../../../images/building-bkg.png);
+  }
 }

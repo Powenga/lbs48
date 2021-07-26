@@ -1,5 +1,13 @@
 .section__content_type_production {
   background: bottom 0 right 0px / auto no-repeat
       url(../../../../images/production-bkg.png),
+    top 100px right 0 / 300px auto no-repeat url(../../../../images/bench.png),
     #fafafa;
+}
+@media screen and (max-width: 768px) {
+  .section__content_type_production {
+    background: bottom 0 right 0px / auto no-repeat
+        url(../../../../images/production-bkg.png),
+      #fafafa;
+  }
 }
