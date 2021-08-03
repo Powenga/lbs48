@@ -1,6 +1,6 @@
 .photos__item {
   height: 240px;
-  flex-grow: 0 1 100%;
+  flex-grow: 1;
   cursor: pointer;
   margin-bottom: 20px;
 }
