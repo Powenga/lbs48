@@ -1,4 +1,4 @@
-import { API_URL } from "./constants.js";
+import { API_URL } from './constants.js';
 
 class Api {
   constructor({ baseUrl, headers }) {
@@ -15,16 +15,16 @@ class Api {
 
   sendMail(data) {
     return fetch(`${this._baseUrl}/mail`, {
-      method: "POST",
+      method: 'POST',
       headers: this._headers,
       body: JSON.stringify(data),
-    }).then(this._onError);
+    }).then(Api._onError);
   }
 }
 
 export default new Api({
   baseUrl: API_URL,
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 });
