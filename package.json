@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "deploy": "npm run build && scp -r ./dist/* beton4a5@beton4a5.beget.tech:/home/b/beton4a5/lbs48.ru/public_html",
     "dev": "webpack serve"
   },
   "repository": {
