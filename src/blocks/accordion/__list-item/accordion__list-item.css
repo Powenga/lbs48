@@ -1,0 +1,25 @@
+.accordion__list-item {
+  position: relative;
+}
+
+.accordion__list-item::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  left: -10px;
+  background-color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .accordion__list-item::before {
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion__list-item::before {
+    top: 9px;
+  }
+}

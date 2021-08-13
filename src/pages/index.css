@@ -92,6 +92,9 @@
 @import url(../blocks/accordion/__content/accordion__content.css);
 @import url(../blocks/accordion/__content/_opened/accordion__content_opened.css);
 @import url(../blocks/accordion/__text/accordion__text.css);
+@import url(../blocks/accordion/__list/accordion__list.css);
+@import url(../blocks/accordion/__list-item/accordion__list-item.css);
+@import url(../blocks/accordion/__item/accordion__item.css);
 @import url(../blocks/accordion/__btn/accordion__btn.css);
 @import url(../blocks/accordion/__btn-rect/accordion__btn-rect.css);
 @import url(../blocks/accordion/__btn-rect/_type/accordion__btn-rect_type_close.css);
